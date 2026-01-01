@@ -1,0 +1,50 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* logostyling */
+img {
+    width: 51px;
+    margin: 6px 26px;
+    border-radius: 50%;
+}
+#navbar{
+    display: flex;
+    position: relative;
+   
+}
+#navbar::before{
+    content: "" ;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 10px 5px;
+   
+    
+}
+  #navbar ul li{
+    list-style: none;
+    margin: 10px 2px;
+  }
+  #navbar ul li a{
+    text-decoration: none;
+    padding: 30px;
+    color: rgb(243, 238, 238);
+    font-size: larger;
+    border-radius: 30px;
+  }
+   #navbar ul li a:hover{
+   color: rgb(201, 37, 37);
+   background-color: rgb(238, 237, 236);
+  }
