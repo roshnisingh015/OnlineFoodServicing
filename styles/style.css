@@ -47,4 +47,50 @@ img {
    #navbar ul li a:hover{
    color: rgb(201, 37, 37);
    background-color: rgb(238, 237, 236);
+  } 
+  /* home section styling */
+  #home{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 184px;
+    height: 406px; 
   }
+  #home::before{
+     content: "" ;
+    background: url('../images/homepic.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+
+  }
+
+  /* Utility Classes */
+  .h-primary{
+     font-size: 2.8rem;
+     padding: 14px;
+     font-family: "Inter", sans-serif;
+  }
+  #home p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+  }
+  .btn{
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 1.3rem;
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 10px;
+    background-color: azure;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background-color: rgb(235, 104, 104);
+  }
+
+
+  
