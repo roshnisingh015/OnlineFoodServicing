@@ -83,9 +83,9 @@ img {
     padding: 10px 20px;
     margin: 20px;
     font-size: 1.3rem;
-    border: 2px soloid rgb(100, 99, 99);
+    border: 2px solid rgb(100, 99, 99);
     border-radius: 10px;
-    background-color: azure
+    background-color: azure;
     cursor: pointer;
   }
   .btn:hover{
