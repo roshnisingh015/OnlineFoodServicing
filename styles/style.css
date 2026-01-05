@@ -1,96 +1,159 @@
 /* Css Reset */
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
 /* logostyling */
-img {
-    width: 51px;
-    margin: 6px 26px;
-    border-radius: 50%;
+#logo img {
+  width: 51px;
+  margin: 6px 26px;
+  border-radius: 50%;
 }
-#navbar{
-    display: flex;
-    position: relative;
-   
-}
-#navbar::before{
-    content: "" ;
-    background-color: black;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: .6;
+
+#navbar {
+  display: flex;
+  position: relative;
 
 }
-#navbar ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 10px 5px;
-   
-    
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .6;
+
 }
-  #navbar ul li{
-    list-style: none;
-    margin: 10px 2px;
-  }
-  #navbar ul li a{
-    text-decoration: none;
-    padding: 30px;
-    color: rgb(243, 238, 238);
-    font-size: larger;
-    border-radius: 30px;
-  }
-   #navbar ul li a:hover{
-   color: rgb(201, 37, 37);
-   background-color: rgb(238, 237, 236);
-  } 
-  /* home section styling */
-  #home{
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 184px;
-    height: 406px; 
-  }
-  #home::before{
-     content: "" ;
-    background: url('../images/homepic.jpg') no-repeat center center/cover;
-    position: absolute;
-    height: 55%;
-    width: 100%;
-    z-index: -1;
-    opacity: .6;
 
-  }
-
-  /* Utility Classes */
-  .h-primary{
-     font-size: 2.8rem;
-     padding: 14px;
-     font-family: "Inter", sans-serif;
-  }
-  #home p{
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: "Inter", sans-serif;
-  }
-  .btn{
-    padding: 10px 20px;
-    margin: 20px;
-    font-size: 1.3rem;
-    border: 2px solid rgb(100, 99, 99);
-    border-radius: 10px;
-    background-color: azure;
-    cursor: pointer;
-  }
-  .btn:hover{
-    background-color: rgb(235, 104, 104);
-  }
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 10px 5px;
 
 
-  
+}
+
+#navbar ul li {
+  list-style: none;
+  margin: 10px 2px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  padding: 30px;
+  color: rgb(243, 238, 238);
+  font-size: larger;
+  border-radius: 30px;
+}
+
+#navbar ul li a:hover {
+  color: rgb(201, 37, 37);
+  background-color: rgb(238, 237, 236);
+}
+
+/* home section styling */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 184px;
+  height: 406px;
+}
+
+#home::before {
+  content: "";
+  background: url('../images/homepic.jpg') no-repeat center center/cover;
+  position: absolute;
+  height: 55%;
+  width: 100%;
+  z-index: -1;
+  opacity: .6;
+
+}
+
+#home p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.btn:hover {
+  background-color: rgb(235, 104, 104);
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 2.8rem;
+  padding: 34px;
+  font-family: "Inter", sans-serif;
+}
+
+.h-secondary {
+  font-size: 2.1rem;
+  padding-bottom: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 1.3rem;
+  border: 2px solid rgb(100, 99, 99);
+  border-radius: 10px;
+  background-color: azure;
+  cursor: pointer;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+
+/* service section */
+#services {
+  display: flex;
+  margin: 20px;
+}
+
+#services .box {
+  border: 2px solid brown;
+  padding: 20px;
+  margin: 6px 30px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+#services .box img {
+  display: block;
+  margin: auto;
+  height: 300px;
+}
+
+/* clients section */
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#client-section::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  z-index: -1;
+  opacity: .3;
+  background: url(../images/background.jpg) ;
+
+}
+#clients img {
+height: 101px;
+padding: 46px;
+
+}
